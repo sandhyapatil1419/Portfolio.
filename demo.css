@@ -1,0 +1,24 @@
+:root {
+  --bg:#020510;--bg1:#050b1a;--bg2:#080f22;--card:#0b1430;
+  --cyan:#00f5ff;--pink:#ff2d78;--gold:#ffd166;--green:#06ffa5;
+  --text:#c8d6f0;--muted:#5a6e90;--border:rgba(0,245,255,0.12);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;overflow-x:hidden;cursor:none;}
+
+/* ... Paste all your CSS from the <style> tag here ... */
+
+/* KEY RESPONSIVE BREAKPOINTS */
+@media(max-width:1024px){
+  #hero{grid-template-columns:1fr;text-align:center;padding-top:120px;}
+  .hright{order:-1;}
+  .pwrap,.phex{width:280px;height:280px;}
+  .hbtns{justify-content:center;}
+}
+@media(max-width:768px){
+  .n-links,.n-cta{display:none;}
+  .hbg{display:flex;}
+  .skwrap{grid-template-columns:1fr 1fr;}
+}
